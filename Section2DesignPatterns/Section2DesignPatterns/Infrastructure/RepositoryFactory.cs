@@ -52,7 +52,7 @@ namespace Section2DesignPatterns.Infrastructure
         IRepository CreateRepository(string environmentName);
     }
 
-    public class Factory : IRepositoryFactory
+    public class RepositoryFactory : IRepositoryFactory
     {
         public IRepository CreateRepository(string environmentName)
         {
@@ -60,10 +60,11 @@ namespace Section2DesignPatterns.Infrastructure
             {
                 return new InMemoryRepository();
             }
-            else if (environmentName == "xxx")
+            else if (environmentName == "123")
             {
                 return new SqlRepository();
-            } else
+            }
+            else
             {
                 return new NullRepo();
             }

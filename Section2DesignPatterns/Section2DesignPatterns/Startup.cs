@@ -29,7 +29,7 @@ namespace Section2DesignPatterns
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            IRepositoryFactory repositoryFactory = new Factory();
+            IRepositoryFactory repositoryFactory = new RepositoryFactory();
             IRepository repository = repositoryFactory.CreateRepository(env.EnvironmentName);
             if (env.IsDevelopment())
             {
