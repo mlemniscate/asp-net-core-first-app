@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WwcQCTrbpHGOl9hCeQEh3d85f/+k4ll+xR03OwLOSWnp8mxGHmvX1FEsZ0DD/cXck0f6hEAkK23jawRn0Oiywg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\4000665\\source\\repos\\asp-net-core-first-app\\Section01Test\\Section01Test\\Section01Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4000665\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}

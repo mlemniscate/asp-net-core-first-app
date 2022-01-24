@@ -1,0 +1,8 @@
+﻿@model Customer
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.TextBoxFor(c=>c.FirstName)
+    @Html.TextBoxFor(c=>c.LastName)
+    <input type="submit" />
+}

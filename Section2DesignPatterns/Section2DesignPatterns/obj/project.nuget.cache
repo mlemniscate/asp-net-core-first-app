@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hbrVgmpSVSxYKwGQr2I08Io5r+XZPU3iw93MwYyEOuUK/SVdgc6KUfdgYYTbdpsf0i0RWV5w8JJQGDFDVbWuSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\4000665\\source\\repos\\asp-net-core-first-app\\Section2DesignPatterns\\Section2DesignPatterns\\Section2DesignPatterns.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4000665\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
