@@ -54,5 +54,27 @@ namespace ConfigurationMVC
             });
 
         }
+
+        public void ConfigureProduction(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+
+            if (env.IsDevelopment())
+            {
+                app.UseExceptionHandler();
+            }
+
+            app.UseStaticFiles();
+            app.UseRouting();
+            /*app.UseMiddleware<ResponseEditorMiddleware>();
+            app.UseMiddleware<RequestMiddleware>();
+            app.UseMiddleware<ShortCircuitMiddleware>();
+            app.UseMiddleware<ContentGeneratorMiddleware>();*/
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            });
+
+        }
     }
 }
