@@ -31,6 +31,7 @@ namespace ConfigurationMVC
 
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseMiddleware<ContentGeneratorMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
