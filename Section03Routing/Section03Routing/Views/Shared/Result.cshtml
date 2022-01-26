@@ -23,5 +23,18 @@
             </tr>
         }
     </table>
+
+    <!-- This is static link -->
+    <div>
+        <a href="/home/index">Main Page</a>
+    </div>
+    <!-- This is dynamic link -->
+    <div>
+        <a href="@Url.Action("index")">Main Page 2</a>
+    </div>
+    <!-- This is dynamic link -->
+    <div>
+        @Html.ActionLink("Go to main page", "index")
+    </div>
 </body>
 </html>
