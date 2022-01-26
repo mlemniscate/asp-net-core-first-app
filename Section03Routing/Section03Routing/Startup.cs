@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Section03Routing.Infrastructures;
@@ -17,6 +18,10 @@ namespace Section03Routing
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<RouteOptions>(o =>
+            {
+                o.ConstraintMap.Add("wday", typeof(RouteConstraintDay));
+            });
             services.AddControllersWithViews();
         }
 
@@ -34,8 +39,8 @@ namespace Section03Routing
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id=saturday}",
-                    constraints: new { id = new RouteConstraintDay() });
+                    pattern: "{controller=Home}/{action=Index}/{id:wday=saturday}"
+                    );
             });
         }
     }
