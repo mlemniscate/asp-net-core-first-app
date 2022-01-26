@@ -1,0 +1,27 @@
+﻿@model RoutingModel
+
+<html>
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <td>Controller</td>
+            <td>@Model.ControllerName</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+            <td>@Model.ActionName</td>
+        </tr>
+        @foreach (var item in Model.RoutData)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
