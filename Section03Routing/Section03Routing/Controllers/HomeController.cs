@@ -14,7 +14,7 @@ namespace Section03Routing.Controllers
             };
             foreach (var item in RouteData.Values)
             {
-                routingModel.RoutData[item.Key] = item.Value.ToString();
+                routingModel.RoutData[item.Key] = item.Value;
             }
             return View("Result", routingModel);
         }
