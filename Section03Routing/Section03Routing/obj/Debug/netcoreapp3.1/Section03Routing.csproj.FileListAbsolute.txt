@@ -31,3 +31,4 @@ C:\Users\4000665\source\repos\asp-net-core-first-app\Section03Routing\Section03R
 C:\Users\4000665\source\repos\asp-net-core-first-app\Section03Routing\Section03Routing\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\4000665\source\repos\asp-net-core-first-app\Section03Routing\Section03Routing\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Result.cshtml.g.cs
 C:\Users\4000665\source\repos\asp-net-core-first-app\Section03Routing\Section03Routing\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\4000665\source\repos\asp-net-core-first-app\Section03Routing\Section03Routing\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs

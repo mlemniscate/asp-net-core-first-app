@@ -38,9 +38,13 @@ namespace Section03Routing
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "areaRoute",
+                    pattern: "{area}/{controller=home}/{action=index}"
+                );
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id:wday=saturday}"
-                    );
+                );
             });
         }
     }
