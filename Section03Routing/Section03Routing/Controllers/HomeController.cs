@@ -12,6 +12,10 @@ namespace Section03Routing.Controllers
                 ControllerName = nameof(HomeController),
                 ActionName = nameof(Index)
             };
+            foreach (var item in RouteData.Values)
+            {
+                routingModel.RoutData[item.Key] = item.Value.ToString();
+            }
             return View("Result", routingModel);
         }
     }
