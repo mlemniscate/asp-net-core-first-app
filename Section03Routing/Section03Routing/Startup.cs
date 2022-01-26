@@ -33,7 +33,7 @@ namespace Section03Routing
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}/{*catchall}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
