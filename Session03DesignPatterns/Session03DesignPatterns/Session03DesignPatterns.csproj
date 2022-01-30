@@ -49,6 +49,9 @@
     <Compile Include="Adapter\ILogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\IRepository.cs" />
+    <Compile Include="Proxy\Order.cs" />
+    <Compile Include="Proxy\OrderProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
