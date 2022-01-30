@@ -46,11 +46,13 @@
     <Compile Include="AbstractFactory\IRepositories.cs" />
     <Compile Include="AbstractFactory\IRepositoryFactory.cs" />
     <Compile Include="AbstractFactory\SqlRepositories.cs" />
+    <Compile Include="Adapter\ILogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
