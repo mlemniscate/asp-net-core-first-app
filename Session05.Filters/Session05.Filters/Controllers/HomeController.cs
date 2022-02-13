@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Session05.Filters.Infrastructures;
 using Session05.Filters.Models;
 using System.Diagnostics;
 
@@ -14,6 +15,8 @@ namespace Session05.Filters.Controllers
             this.logger = logger;
         }
 
+        [MyAction]
+        [TypeFilter(typeof(AuthorizationSqlAttribute))]
         public IActionResult Index()
         {
             return View();
